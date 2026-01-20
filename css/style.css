@@ -197,6 +197,69 @@ details.project-card summary h3 {
   border-radius: 6px;
 }
 
+.project-gallery {
+  margin-top: 1.5rem;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+}
+
+.gallery-grid figcaption {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-top: 0.25rem;
+  text-align: center;
+}
+
+.project-press {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px dashed var(--border);
+  font-size: 0.95rem;
+}
+
+.project-press h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.project-press ul {
+  padding-left: 1.25rem;
+  margin: 0;
+}
+
+.project-press a {
+  margin-left: 0.5rem;
+  font-weight: 500;
+}
+.project-video {
+  margin-top: 1.5rem;
+}
+
+.video-wrapper {
+  position: relative;
+  padding-top: 56.25%; /* 16:9 aspect ratio */
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
 
 .button {
   display: inline-block;
