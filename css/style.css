@@ -6,6 +6,11 @@
   --accent: #0a66c2;
   --border: #e5e5e5;
   --heading: #3c3c49;
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2.5rem;
+  --space-xl: 4rem;
 }
 
 * {
@@ -71,8 +76,12 @@ body {
 }
 
 .hero {
-  padding: 3rem 0rem;
-  border-bottom: 1px solid var(--border);
+  padding: var(--space-xl) 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(10,102,194,0.04),
+    transparent
+  );
 }
 
 .hero h2 {
@@ -81,8 +90,23 @@ body {
 }
 
 .section {
-  padding: 2rem 0;
+  padding: var(--space-xl) 0;
   border-bottom: 1px solid var(--border);
+}
+
+.section h2 {
+  font-size: 1.75rem;
+  margin-bottom: var(--space-md);
+  color: var(--heading);
+}
+
+.card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: var(--space-md);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .skills-grid {
@@ -96,24 +120,26 @@ body {
 }
 
 .skill-card{
-  /* background-color: #f9f9ff;  */
+  background: #fff;
   border: 1px solid var(--border);
-  border-radius: 8px;
-  padding: 1.5rem;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.08);
-  transition: transform 0.2s, box-shadow 0.2s;
+  border-radius: 10px;
+  padding: var(--space-md);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.skill-card:hover {
-  transform: translateY(-3px);
+/* .skill-card:hover {
+  transform: translateY(-2px);
   box-shadow: 0 6px 12px rgba(0,0,0,0.15);
   color: var(--accent);
-}
+} */
 
 .skill-card h3 {
   margin-top: 0;
   color: var(--);
   text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: var(--space-sm);
 }
 
 .skill-card ul {
@@ -127,12 +153,14 @@ body {
 }
 
 .project-card {
+  background: #fff;
   border: 1px solid var(--border);
-  /* background-color: #f9f9ff;  */
-  padding: 1.25rem;
-  margin-bottom: 1.5rem;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.08);
-  border-radius: 6px;
+  border-radius: 10px;
+  padding: var(--space-md);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  font-size: 1.1rem;
+  margin-bottom: var(--space-sm);
 }
 
 .project-card:hover {
@@ -276,12 +304,12 @@ details.project-card summary h3 {
 }
 
 .contact-card {
+  background: #fff;
   border: 1px solid var(--border);
-  /* background-color: #f9f9ff;  */
-  padding: 1.25rem;
-  margin-bottom: 1.5rem;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.08);
-  border-radius: 6px;
+  border-radius: 10px;
+  padding: var(--space-md);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 
 }
 
