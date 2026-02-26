@@ -1,305 +1,187 @@
-<!-- Header tag: Intro Content
-  - meta charset prevents weird symbols 
-  - meta name="viewport" ... makes site mobile friendly
-  - meta name="description" .. Used by search engines
-  - css link adding style
--->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Justine Shaw | Multidisciplinary Engineer</title>
-  <meta name="description" content="Technical Support and Web Systems professional with experience in web content, analytics, automation, and IT support." />
-  <link rel="stylesheet" href="css/style.css" />
+  <title>Justine Shaw | Engineer</title>
+  <link rel="stylesheet" href="/css/style.css" />
 </head>
-
-<!-- Body: What Users See: header,main,footer
-  - Header - Used for navigation + branding
-  - Main - Actual content of the page
-  - Footer - Simple unchanged content
-  Remember Semantic vs layout
-  <section> = meaning in the doc , <div> = grouping & styling
--->
 <body>
+
+  <!-- Header -->
   <header class="site-header">
-    <nav class="container nav">
-      <h1 class="logo">
-      <a href="#top">  Justine Shaw </a> 
-      </h1>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+    <div class="nav">
+      <div class="logo">Justine Shaw</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <!-- Hero -->
-    <section class="hero">
-      <div class="container">
-      <h2>Multidisciplinary Engineer</h2>
-      <p>
-        Highly motivated engineer bridging web platforms, automation, and reliable systems support
-        to deliver clear, user-focused digital solutions.
-      </p>
-      <div>
-    </section>
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Engineer. Builder. Systems Thinker.</h1>
+    <p>
+      I design and build reliable systems across hardware and software —
+      from embedded robotics platforms to full-stack web applications.
+    </p>
+  </section>
 
-    <!-- About -->
-    <section id="about" class="section">
-      <div class="container">
-      <h2>About Me</h2>
-      <p>
-        I’m a multidisciplinary engineer and technical support professional with experience spanning
-        telecommunications, research, and nonprofit environments. My background includes electronics,
-        robotics, software development, and systems support across both hardware and web-based platforms.
-      </p>
-      
-      <p>
-        I specialize in troubleshooting complex issues, automating workflows, and maintaining reliable,
-        accessible digital systems. With hands-on experience in Python, Bash, MERN stack development,
-        MATLAB, and embedded hardware, I bring technical depth alongside clear communication and
-        documentation for both technical and non-technical users.
-      </p>
-      </div>
-    </section>
+  <!-- About + Skills -->
+  <section id="about" class="section">
+    <div class="about-skills-grid">
 
-    <!-- Skills -->
-    <section id="skills" class="section">
-      <div class="container">
-      <h2>Skills</h2>
-      <div class="skills-grid">
-        <div class="skill-card">
-          <h3>Web Content & Development</h3>
-          <ul>
-            <li>HTML, CSS</li>
-            <li>WordPress</li>
-            <li>Basic UI/UX & Accessibility</li>
-            <li>MERN stack (MongoDB, Express, React, Node.js)</li>
-            <li>REST APIs</li>
-          </ul>
-        </div>
-        <div class="skill-card" >
-          <h3>Analytics</h3>
-          <ul>
-            <li>Excel</li>
-            <li>Splunk</li>
-            <li>Python Data Analysis</li>
-          </ul>
-        </div>
-        <div class="skill-card">
-          <h3>Programming & Scripting</h3>
-          <ul>
-            <li>C, C++</li>
-            <li>Python</li>
-            <li>Bash</li>
-            <li>SQL</li>
-            <li>MATLAB</li>
-          </ul>
-        </div>
-        <div class="skill-card">
-          <h3>Systems & Tools</h3>
-          <ul>
-            <li>Windows, macOS, Linux</li>
-            <li>Microsoft 365</li>
-            <li>GitHub, Jira, ClickUp</li>
-            <li>Azure DevOps</li>
-            <li>Canva Pro</li>
-          </ul>
-        </div>
-        <div class="skill-card">
-          <h3>Embedded & Hardware </h3>
-          <ul>
-            <li>Arduino, Raspberry Pi</li>
-          </ul>
-        </div>
-      </div>
-      </div>
-    </section>
-
-    <!-- Projects -->
-    <section id="projects" class="section">
-      <div class="container">
-      <h2>Projects</h2>
-
-      <!-- <div class="project-card">
-        <h3>NFC Authentication System (MERN Stack)</h3>
+      <div class="about-column">
+        <h2>About</h2>
         <p>
-          Designed and implemented an end-to-end NFC authentication platform integrating
-          embedded firmware, a Raspberry Pi backend, and a MERN web application with full
-          CRUD functionality.
+          I’m a multidisciplinary engineer with experience spanning
+          telecommunications, research, and software development.
+          My background combines electronics, embedded systems,
+          robotics, and modern web technologies.
         </p>
-        <p class="tech">Tech: MongoDB, Express, React, Node.js, Arduino</p>
-        <a href="#" aria-disabled="true">GitHub (coming soon)</a>
-      </div> -->
+        <p>
+          I focus on solving complex technical problems, building
+          structured systems, and creating tools that are reliable,
+          scalable, and thoughtfully designed.
+        </p>
+      </div>
 
-      <details class="project-card">
-        <summary>
-          <h3>Design and Swarm Density Control via MIPS Index</h3>
-          <p class="tech">Tech: MATLAB, Onshape, Original i3 Prusa MK3  </p>
-        </summary>
+      <div class="skills-column">
+        <h2>Capabilities</h2>
 
-        <div class="project-details">
-          <p>
-            Designed in Onshape and 3D Printed, a bi-modal swarm model
-            responsive to temperature using MIPS aggregation theory
-            where simulated swarm behavior was done in MATLAB with aggregation
-            control.
-          </p>
+        <div class="skills-grid">
 
-          <img src="assets/SwarmRobotResults.png" alt="Swarm Robot results of 3D printing and MATLAB">
-          
-
-          <div class="project-publication">
-            <h4>Publication</h4>
-            <img src="assets/SMPublication.png" alt="Springer Publication Flier">
+          <div>
+            <h3>Software</h3>
             <ul>
-              <li>
-                Shaw, J. & Notomista, G. 
-                <em>Design and Density Control of a Swarm of Bimodal Particles</em>,
-                in <em>Distributed Autonomous Robotic Systems: 17th International Symposium</em>,
-                Springer Proceedings in Advanced Robotics, Springer Cham, pp. 143–156 (2026).  
-                <a href="https://doi.org/10.1007/978-3-032-04584-3" target="_blank" rel="noopener">
-                  DOI
-                </a>
-              </li>
+              <li>Python</li>
+              <li>C / C++</li>
+              <li>SQL</li>
+              <li>Bash</li>
+              <li>MATLAB</li>
             </ul>
           </div>
-          
+
+          <div>
+            <h3>Web</h3>
+            <ul>
+              <li>React</li>
+              <li>Node.js</li>
+              <li>MongoDB</li>
+              <li>REST APIs</li>
+              <li>HTML / CSS</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>Embedded</h3>
+            <ul>
+              <li>Arduino</li>
+              <li>Raspberry Pi</li>
+              <li>Robotics Systems</li>
+              <li>Hardware Debugging</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>Systems</h3>
+            <ul>
+              <li>Automation</li>
+              <li>Workflow Optimization</li>
+              <li>Technical Documentation</li>
+              <li>Systems Support</li>
+            </ul>
+          </div>
+
         </div>
-      </details>
+      </div>
 
-      <details class="project-card">
-        <summary>
-          <h3>NFC Authentication System (MERN Stack)</h3>
-          <p class="tech">Tech: MongoDB, Express, React, Node.js, Arduino</p>
-          <!-- <a href="#" aria-disabled="true">GitHub (coming soon)</a> -->
-        </summary>
+    </div>
+  </section>
 
-        <div class="project-details">
-          <p>
-            Designed and implemented an end-to-end NFC authentication platform integrating
-            embedded firmware, a Raspberry Pi backend, and a MERN web application with full
-            CRUD functionality.
-          </p>
-          
-          <div class="project-gallery">
-            <h4>Gallery</h4>
-            <div class="gallery-grid">
+<!-- Projects Section  -->
 
-              <figure>
-                <img src="assets/nfc-project/hardwarecase.png"
-                alt="NFC reader hardware prototype">
-                <figcaption>Hardware prototype</figcaption>
-              </figure>
+  <section id="projects" class="section fade-in">
+    <div class="container">
+      <h2>Projects</h2> 
+      <div class="projects-wrapper">
 
-              <figure>
-                <img src="assets/nfc-project/LandingPage.png"
-                alt="Website Landing Page">
-                <figcaption>Hardware prototype</figcaption>
-              </figure>
+        <!-- Project 1 -->
+        <div class="project-item">
+          <div class="project-meta">
+            <span>2022-2024</span>
+            <span>Systems & Control</span>
+          </div>
+    
+          <div class="project-main">
+            <h3>Design and Swarm Density Control via MIPS Index </h3>
+    
+            <p>
+              Designed in Onshape and 3D Printed, a bi-modal swarm model
+              responsive to temperature using MIPS aggregation theory
+              where simulated swarm behavior was done in MATLAB with aggregation
+              control.
+            </p>
+    
+            <ul class="project-tech">
+              <li>MATLAB</li>
+              <li>OnShape</li>
+              <li>Original i3 Prusa MK3</li>
+            </ul>
+    
+            <a href="project-1.html" class="project-link">View Project →</a>
+          </div>
+        </div>
 
-              <figure>
-                <img src="assets/nfc-project/AndroidApplication.png"
-                alt="Android Application Card">
-                <figcaption> Android Application showing card number</figcaption>
-              </figure>
-
+        <!-- Project 2 -->
+          <div class="project-item">
+            <div class="project-meta">
+              <span>2019-2020</span>
+              <span>Embedded Hardware & Software</span>
             </div>
 
+            <div class="project-main">
+              <h3>NFC Authentication System with MERN Stack & Android App</h3>
+
+              <p>
+                Designed and implemented an end-to-end NFC authentication platform integrating
+                embedded firmware, a Raspberry Pi backend, and a MERN web application with full
+                CRUD functionality.
+              </p>
+
+              <ul class="project-tech">
+                <li>C++</li>
+                <li>MongoDB</li>
+                <li>Express</li>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>Arduino</li>
+                <li>Javascript</li>
+                <li>Raspberry Pi</li>
+                <li>Python</li>
+              </ul>
+
+              <a href="project-2.html" class="project-link">View Project →</a>
+            </div>
           </div>
-
-          <div class="project-press">
-            <h4>Featured In</h4>
-          
-            <ul>
-              <li>
-                <strong> The Jamaica Gleaner</strong> —
-                <em>Building a solution - UWI Faculty of Engineering answering COVID-19 call</em>
-                <a href="https://jamaica-gleaner.com/article/news/20200509/building-solution-uwi-faculty-engineering-answering-covid-19-call"
-                   target="_blank"
-                   rel="noopener">
-                  Read article
-                </a>
-              </li>
-            </ul>
-          </div>
-          
-        
-        </div>
-      </details>
-
-
-      <details class="project-card">
-        <summary>
-          <h3>IEEE Southeast Conference Robotics Competition Hardware</h3>
-          <p class="tech">Tech & Tools: EagleCAD, sensors, motors, wheels, motor drivers, micro-controllers, soldering irons, multimeters, crimping tools   </p>
-        </summary>
-
-        <div class="project-details">
-          <p>
-           Hardware member responsible for creating PCB board in EagleCAD, testing all hardware components and 
-           wiring the robot for the competition. Robot was designed to autonomously collect blocks and balls within a circuit and then return to home base.
-          </p>
-
-          <img src="assets/IEEERobot.png" alt=" Robot for 2019 IEEE Southeast Conference">
-          
-
-          <div class="project-demo">
-            <h4>Project Demo</h4>
-            <div class="video-wrapper">
-              <iframe width="560" 
-              height="315" 
-              src="https://www.youtube.com/embed/06KybZBW-bg?si=XbSbldYFVWQs_F8W" 
-              title="YouTube video player" 
-              frameborder="0" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-              referrerpolicy="strict-origin-when-cross-origin" 
-              allowfullscreen>
-              </iframe>
-          </div>
-          
-        </div>
-      </details>
-
-      <div class="project-card">
-        <h3>Personal Portfolio Website</h3>
-        <p>
-          Built an accessible, responsive portfolio website using semantic HTML and modern
-          CSS to showcase technical projects and professional experience.
-        </p>
-        <p class="tech">Tech: HTML, CSS, GitHub Pages</p>
-        <a href="https://jars1214.github.io">Live Site</a>
+      
       </div>
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="section">
-      <div class="container">
-        <div class="contact-card">
-      <h2>Contact</h2>
-      <p>
-        📧 <a href="mailto:justinearshaw@gmail.com">Email</a><br />
-        💼 <a href="https://www.linkedin.com/in/justinearshaw/" target="_blank" rel="noopener">LinkedIn</a><br />
-        💻 <a href="https://jars1214.github.io/jshaw.github.io/" target="_blank" rel="noopener">GitHub</a>
-      </p>
-      <p>
-        <a class="button" href="assets/Justine_Shaw_Resume_2026.pdf" download>
-          Download Resume
-        </a>
-      </p>
     </div>
-      </div>
-    </section>
-  </main>
+  </section>
 
-  <footer class="site-footer">
-    <p>© 2026 Justine Shaw</p>
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <p>Open to engineering, research, and development opportunities.</p>
+  </section>
+
+  <footer class="footer">
+    © 2026 Justine Shaw
   </footer>
+
 </body>
 </html>
